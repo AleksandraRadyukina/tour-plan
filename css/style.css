@@ -348,6 +348,7 @@ template {
 
 body {
   font-family: "Mulish", sans-serif;
+  font-size: 14px;
   background-color: #F5FAFE;
   color: #333333;
 }
@@ -534,8 +535,17 @@ img {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
-    width: 92%;
+    width: 85%;
   }
+}
+
+@media (max-width: 767px) {
+  .search {
+    width: 300px;
+  }
+}
+
+@media (max-width: 740px) {
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
   }
