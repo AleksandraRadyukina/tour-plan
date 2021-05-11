@@ -501,6 +501,21 @@ img {
   padding: 0;
 }
 
+.breadcramp-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcramp-list__item:not(:last-child)::after {
+  content: '/';
+  margin-right: 4px;
+}
+
+.breadcramp-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
