@@ -705,6 +705,7 @@ img {
   .hotel-info__stars {
     -ms-flex-preferred-size: content;
         flex-basis: content;
+    width: unset;
   }
   .hotel-info__title {
     width: 100%;
