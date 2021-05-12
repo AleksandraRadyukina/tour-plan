@@ -685,6 +685,9 @@ img {
     height: 1px;
     background-color: #333333;
   }
+  .hotel {
+    padding-top: 5px;
+  }
   .hotel-info__info {
     width: 100%;
   }
@@ -705,6 +708,7 @@ img {
   }
   .hotel-info__title {
     width: 100%;
+    margin: 0;
   }
   .rating {
     display: none;
