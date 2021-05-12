@@ -516,6 +516,99 @@ img {
   color: inherit;
 }
 
+.hotel {
+  padding-top: 23px;
+  padding-bottom: 70px;
+}
+
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel-info__stars {
+  margin-bottom: 4px;
+}
+
+.hotel-info__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hotel-info__title {
+  margin: 0;
+  margin-right: 15px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.hotel-info__description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.hotel-info__offer {
+  padding: 3px 9px;
+  background-color: #EC1F46;
+  border-radius: 3px;
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.hotel-info__rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 9px 7px 6px 7px;
+  background-color: #EC1F46;
+  border-radius: 3px;
+  color: #FFFFFF;
+}
+
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.stars__star {
+  margin-right: 2px;
+}
+
+.rating__text {
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.rating__counter {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -547,14 +640,11 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
-    max-width: 576px;
+    max-width: 700px;
     width: 85%;
   }
-}
-
-@media (max-width: 767px) {
   .search {
     width: 300px;
   }
