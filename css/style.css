@@ -637,7 +637,7 @@ img {
 
 .slider-button {
   position: absolute;
-  z-index: 3;
+  z-index: 2;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -651,14 +651,26 @@ img {
   background-color: transparent;
 }
 
-.slider-button--next {
+.slider-button_novigate_next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
 }
 
-.slider-button--prev {
+.slider-button_novigate_prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.swiper-slide img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {

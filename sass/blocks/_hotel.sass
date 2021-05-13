@@ -71,7 +71,7 @@
   width: 728px
   &-button
     position: absolute
-    z-index: 3
+    z-index: 2
     top: 50%
     transform: translateY(-50%)
     width: 30px
@@ -82,10 +82,15 @@
     background-position: center
     background-size: 10px
     background-color: transparent
-    &--next
+    &_novigate_next
       right: 18px
       background-image: url(../img/arrow-next.svg)
-      
-    &--prev
+    &_novigate_prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+
+.swiper-slide
+  display: flex
+  img
+    width: 100%
+    object-fit: cover
