@@ -677,7 +677,9 @@ img {
   background-color: #0A223D;
   max-width: 350px;
   padding: 20px 29px 26px 26px;
-  color: #FFF;
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
+  color: #FFFFFF;
 }
 
 .booking__info {
@@ -703,6 +705,21 @@ img {
           flex-direction: column;
 }
 
+.booking-price__start {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.booking-price__pricetag {
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.booking-price__per-room {
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .booking__call-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -711,6 +728,8 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 17px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .booking__button {
@@ -727,6 +746,18 @@ img {
 .call-center__number {
   text-decoration: none;
   color: inherit;
+}
+
+.call-center__icon {
+  margin-right: 8px;
+}
+
+.person-room__icon {
+  margin-right: 9px;
+}
+
+.person-room__icon-home {
+  margin-right: 14px;
 }
 
 @media (max-width: 1200px) {

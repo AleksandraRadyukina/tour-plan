@@ -1,9 +1,10 @@
 .booking
   background-color: #0A223D
   max-width: 350px
-  padding-top: 
   padding: 20px 29px 26px 26px
-  color: #FFF
+  border-radius: 8px
+  font-family: $secondary-fonts
+  color: $light
   &__info 
    display: flex
    justify-content: space-between
@@ -11,26 +12,44 @@
    margin-bottom: 9px
   &-price 
    display: flex
-   align-content: 
-   align-items: 
    flex-direction: column
+   &__start 
+    font-size: 10px
+    line-height: 14px 
+   &__pricetag
+    font-size: 24px
+    line-height: 33px
+   &__per-room 
+    font-size: 12px
+    line-height: 16px
   &__call-center 
    display: flex
    justify-content: space-between
    margin-bottom: 17px
+   font-size: 18px
+   line-height: 25px
   &__button 
    padding: 13px 84px
    font-size: 14px
    line-height: 19px
    font-family: Nunito
    border: none
-   background: #EC1F46
+   background: $primary
    border-radius: 4px
-   color: #FFFFFF
+   color: $light
 
 
-.call-center__number 
-  text-decoration: none
-  color: inherit
+.call-center
+  &__number 
+   text-decoration: none
+   color: inherit
+  &__icon 
+   margin-right: 8px
 
+
+.person-room
+  &__icon
+    margin-right: 9px
+  &__icon-home
+    margin-right: 14px
 
