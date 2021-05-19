@@ -699,8 +699,8 @@ img {
 .booking {
   background-color: #0A223D;
   width: 350px;
-  max-height: 210px;
-  padding: 20px 29px 26px 26px;
+  min-height: 210px;
+  padding: 29px 29px 26px 26px;
   border-radius: 8px;
   font-family: "Nunito", sans-serif;
   color: #FFFFFF;
@@ -842,6 +842,7 @@ img {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
 }
 
 .newsletter-title__strong {
@@ -854,7 +855,7 @@ img {
 
 .subscribe {
   position: relative;
-  width: 355px;
+  width: 350px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
