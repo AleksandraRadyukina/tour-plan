@@ -785,6 +785,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .person-room__icon {
