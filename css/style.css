@@ -950,10 +950,18 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .hotel {
+    padding-bottom: 60px;
+  }
+  .newsletter {
+    padding: 92px 0 93px 0;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
-    max-width: 700px;
-    width: 85%;
+    max-width: 85%;
   }
   .search {
     width: 300px;
@@ -971,6 +979,9 @@ img {
   }
   .map {
     width: 48%;
+  }
+  .newsletter__subscribe {
+    max-width: 310px;
   }
 }
 
@@ -1047,6 +1058,9 @@ img {
   .booking__button {
     padding: 13px 40px;
   }
+  .newsletter__subscribe {
+    max-width: 290px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1067,17 +1081,46 @@ img {
     width: 100%;
     height: 200px;
   }
+  .newsletter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 
 @media (max-width: 610px) {
   .slider {
     height: 300px;
   }
+  .hotel {
+    padding-bottom: 40px;
+  }
   .hotel__slider {
     margin-bottom: 20px;
   }
   .map {
     height: 190px;
+  }
+  .newsletter-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .newsletter-title {
+    margin-bottom: 37px;
+  }
+  .newsletter-title__strong {
+    padding-top: 5px;
+  }
+  .subscribe {
+    max-width: 100%;
   }
 }
 
@@ -1087,6 +1130,9 @@ img {
   }
   .slider {
     height: 250px;
+  }
+  .newsletter {
+    padding: 76px 0 83px 0;
   }
 }
 
