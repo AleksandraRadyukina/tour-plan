@@ -24,14 +24,15 @@
      &__input
      width: 340px
   .hotel
+    padding-bottom: 60px
     &-lead
       flex-direction: column
-    &__slider
-      margin-bottom: 30px
+      
     &-wrap
       flex-direction: row
   .slider
     width: 100%
+    margin-bottom: 30px
   .booking 
     padding-left: 23px
     padding-right: 22px
@@ -39,12 +40,27 @@
   .map
     width: 340px
     height: 210px
+  .reviews
+    &-title
+      font-size: 30px
+      line-height: 38px
+    &-slider
+      width: 579px
+      &__item
+       margin-top: 95px
+       padding: 0 60px 30px 64px
+    &__button
+      &-prev
+        margin: 0
+      &-next
+        margin: 0
+  .newsletter
+    padding: 92px 0 93px 0
 
 @media (max-width: 768px)
   .hotel
     padding-bottom: 60px
-  .newsletter
-    padding: 92px 0 93px 0
+
     
   
 @media (max-width: 767px)
@@ -66,6 +82,14 @@
   .newsletter
     &__subscribe
       max-width: 310px
+  .reviews
+    &-slider
+      width: 560px
+      &__item
+        &:before, &:after
+          display: none
+          
+
 
 @media (max-width: 740px)
   .navbar
@@ -113,6 +137,11 @@
 
   .slider
     height: 350px
+  .reviews
+    &-slider
+      max-width: 500px
+      &__item
+        padding: 0 50px 28px 54px
 
 @media (max-width: 711px)
   .booking
@@ -121,11 +150,18 @@
   .newsletter
     &__subscribe
       max-width: 290px
+  .reviews
+    &-slider
+      max-width: 450px
+      &__item
+        padding: 0 40px 28px 40px
     
 @media (max-width: 640px)
   .slider
     height: 340px
+    margin-bottom: 20px
   .hotel
+    padding-bottom: 41px
     &-wrap
       flex-direction: column
   .booking
@@ -141,6 +177,11 @@
       &__strong
         font-size: 30px
         line-height: 38px
+  .reviews
+    &-slider
+      max-width: 400px
+      &__item
+        margin-top: 87px
 
 @media (max-width: 610px)
   .slider
@@ -169,6 +210,33 @@
     height: 250px
   .newsletter
     padding: 76px 0 83px 0
+  .reviews
+    &-title
+      font-size: 18px
+      line-height: 23px
+    &-slider
+      &__item
+        padding: 0 32px 34px 31px
+    &__button
+      top: 21%
+      &-prev
+        left: 50%
+        transform: translate(-50%, 0)
+        margin-left: -25%
+      &-next
+        right: 50%
+        transform: translate(50%, 0)
+        margin-right: -25%
+
+@media (max-width: 485px)
+  .reviews
+    &-slider
+      max-width: 281px
+      &__item
+        padding: 0 29px 36px 33px
+    &__button
+      top: 17%
+
 
 @media (max-width: 435px)
   .hotel
@@ -176,6 +244,15 @@
       padding-bottom: 38px
   .slider
     height: 200px
+
+@media (max-width: 343px)
+  .reviews
+    &__button
+      top: 20%
+      &-prev
+        margin-left: -30%
+      &-next
+        margin-right: -30%
 
 @media (max-width: 320px)
   .navbar
@@ -186,4 +263,7 @@
     height: 179px
   .map
     height: 173px
+  .reviews
+    &__button
+      
 
