@@ -12,6 +12,8 @@
   },
 });
 
+$('.parallax-window').parallax({imageSrc: 'img/newsletter-bg.jpg'});
+
 new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,

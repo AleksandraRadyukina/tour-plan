@@ -187,18 +187,21 @@
 
 </main>
 <!-- /.main -->
-<section class="newsletter">
-  <div class="container newsletter-container">
-    <h2 class="newsletter-title">
-      subscribe to our
-      <span class="newsletter-title__strong">Newsletter</span>
-    </h2>
-    <form action="#" class="subscribe newsletter__subscribe">
-      <input type="text" class="subscribe__input" placeholder="Your email address">
-      <button class="subscribe__button">Send</button>
-    </form>
-  </div>
-</section>
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
+  <section class="newsletter">
+    <div class="container newsletter-container">
+      <h2 class="newsletter-title">
+        subscribe to our
+        <span class="newsletter-title__strong">Newsletter</span>
+      </h2>
+      <form action="#" class="subscribe newsletter__subscribe">
+        <input type="text" class="subscribe__input" placeholder="Your email address">
+        <button class="subscribe__button">Send</button>
+      </form>
+    </div>
+  </section>
+</div>
+
 
 <section class="reviews">
   <div class="container reviews__container">
@@ -227,6 +230,50 @@
           </div>
           <!-- /.reviews-slider__item -->
         </div>
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar-2.jpg" alt="Photo: Bill Got" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Bill Got</h3>
+              <span class="reviews-slider__date">Stayed 17 Dec, 2020</span>
+              <div class="reviews__stars stars">
+                <img class="stars__star" src="img/Star.svg" alt="star">
+                <img class="stars__star" src="img/Star.svg" alt="star">
+                <img class="stars__star" src="img/Star.svg" alt="star">
+                <img class="stars__star" src="img/Star.svg" alt="star">
+                <img class="stars__star" src="img/Star.svg" alt="star">
+              </div>
+            </div>
+            <!-- /.reviews-slider__profile -->
+            <p class="reviews-slider__text">
+              One of the best hotels i've ever stayed at. The location is very secluded, and there aren't many treehouses - which makes it the perfect place to relax. The treehouses are very beautiful, and they offer daily alcohol included (nice touch). My only complaint was that the water activities were not included (kayaks). Considering that there is nothing to do, and no where to go - it would nice if they offered some sort of daily activities included, instead of making everything paid. Otherwise, I'd highly recommend. 
+            </p>
+            <!-- /.reviews-text -->
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
+        <div class="swiper-slide">
+          <div class="reviews-slider__item">
+            <div class="reviews-slider__profile">
+              <img src="img/reviews-avatar-3.jpg" alt="Photo: Jane Colin" class="reviews-slider__avatar">
+              <h3 class="reviews-slider__username">Jane Colin</h3>
+              <span class="reviews-slider__date">Stayed 18 Jan, 2019</span>
+              <div class="reviews__stars stars">
+                <img class="stars__star" src="img/Star.svg" alt="star">
+                <img class="stars__star" src="img/Star.svg" alt="star">
+                <img class="stars__star" src="img/Star.svg" alt="star">
+                <img class="stars__star" src="img/Star.svg" alt="star">
+                <img class="stars__star" src="img/Star.svg" alt="star">
+              </div>
+            </div>
+            <!-- /.reviews-slider__profile -->
+            <p class="reviews-slider__text">
+              This place was AMAZING and we were so sad we only booked one night. The photos do not do justice of how beautiful the grounds and the treehouse were. The beach was picture perfect and the staff was very accommodating. Food and cocktails excellent. Out of the ten places we booked for our month long honeymoon this was top of the list. The only thing I would recommend is figuring out your own way to and from the resort once you get to the main dock nearby. You can get a long tail over for very cheap from a local. Cannot wait to come back! 
+            </p>
+            <!-- /.reviews-text -->
+          </div>
+          <!-- /.reviews-slider__item -->
+        </div>
       </div>
 
     </div>
@@ -236,6 +283,8 @@
 </section>
 <!-- /.reviews -->
 <script src="./js/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./js/parallax.min.js"></script>
 <script src="./js/main.js"></script>
 
 </body>
