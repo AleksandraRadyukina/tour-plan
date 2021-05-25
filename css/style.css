@@ -1582,13 +1582,19 @@ iframe {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .navbar__search_mobile_visible {
+    margin-bottom: 19px;
+  }
   .navbar-menu {
     display: none;
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
-    top: 78px;
+    top: 77px;
+    padding: 11px;
+    padding-bottom: 68px;
+    height: 498px;
   }
   .navbar-menu__items {
     -webkit-box-orient: vertical;
@@ -1638,8 +1644,9 @@ iframe {
   }
   .user__name_light {
     color: #FFFFFF;
-    margin-left: 0;
+    padding-left: 0;
     margin-top: 10px;
+    margin-bottom: 7px;
   }
   .hotel {
     padding-top: 5px;
@@ -1819,6 +1826,9 @@ iframe {
   .logo {
     width: 99px;
   }
+  .navbar-menu {
+    top: 75px;
+  }
   .slider {
     height: 250px;
   }
@@ -1871,6 +1881,9 @@ iframe {
 }
 
 @media (max-width: 343px) {
+  .navbar-menu {
+    top: 69px;
+  }
   .reviews-title {
     margin-left: 20px;
     margin-right: 20px;

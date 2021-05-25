@@ -135,13 +135,20 @@
     &__user
       flex-direction: column
       justify-content: center
+    &__search
+      &_mobile
+        &_visible
+         margin-bottom: 19px
     &-menu
       display: none
       position: fixed
       left: 0
       right: 0
       bottom: 0
-      top: 78px
+      top: 77px
+      padding: 11px
+      padding-bottom: 68px
+      height: 498px
       &__items
         flex-direction: column
       &__item
@@ -175,8 +182,10 @@
     &__name
       &_light
         color: $light
-        margin-left: 0
+        padding-left: 0
         margin-top: 10px
+        margin-bottom: 7px
+
   
   .hotel
     padding-top: 5px
@@ -309,6 +318,9 @@
 @media (max-width: 576px)
   .logo
     width: 99px
+  .navbar
+    &-menu
+      top: 75px
   .slider
     height: 250px
   .newsletter
@@ -349,6 +361,9 @@
     height: 200px
 
 @media (max-width: 343px)
+  .navbar
+    &-menu
+      top: 69px
   .reviews
     &-title
       margin-left: 20px
