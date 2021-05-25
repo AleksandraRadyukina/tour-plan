@@ -1143,6 +1143,12 @@ iframe {
   border-radius: 6px;
 }
 
+.footer {
+  background-color: #0A223D;
+  color: #FFFFFF;
+  padding: 108px 0 46px 0;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1393,7 +1399,21 @@ iframe {
 
 @media (max-width: 689px) {
   .activities-card {
+    width: 280px;
+    height: 255px;
+  }
+}
+
+@media (max-width: 676px) {
+  .activities-card {
     width: 270px;
+    height: 255px;
+  }
+}
+
+@media (max-width: 650px) {
+  .activities-card {
+    width: 260px;
     height: 255px;
   }
 }
