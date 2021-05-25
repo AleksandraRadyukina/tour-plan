@@ -1278,6 +1278,9 @@ iframe {
   .newsletter__subscribe {
     max-width: 310px;
   }
+  .reviews__container {
+    max-width: 699px;
+  }
   .reviews-slider {
     width: 560px;
   }
