@@ -28,7 +28,7 @@
      &__input
      width: 340px
   .hotel
-    padding-bottom: 60px
+    padding-bottom: 59px
     &-lead
       flex-direction: column
       
@@ -41,6 +41,8 @@
     padding-left: 23px
     padding-right: 22px
     width: 340px
+    &__info
+      margin-bottom: 7px
   .map
     width: 340px
     height: 210px
@@ -61,13 +63,56 @@
   .newsletter
     padding: 92px 0 93px 0
   .activities
-    padding-bottom: 50px
+    padding: 50px 0 48px 0
     &__cards
       flex-wrap: wrap
     &-card
       width: 339px
-      max-height: 255px
+      min-height: 255px
+      padding: 24px 26px 24px 26px
       margin-bottom: 20px
+  .footer
+    padding: 73px 0 33px 0
+    &-wrapper
+      grid-template-columns: repeat(3, minmax(min-content, 1fr))
+      grid-gap: 50px
+    &__logo
+      grid-row: 1 / 2
+      margin: 0
+      width: 97px
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+        margin-left: -16px
+        margin-top: 7px
+    &__legal 
+      margin-left: 0px
+      white-space: nowrap
+    &__categories
+      grid-row: 2 / 3
+      white-space: nowrap
+    &__additional
+      margin-left: 0
+      white-space: nowrap
+      justify-self: end
+    &__contact
+      &-detalis
+        grid-column: span 4
+        grid-row: 3
+      &-form
+        grid-column: span 3
+        grid-row: 4
+        margin-top: 13px
+        margin-left: 0
+    &__form
+      justify-content: flex-start
+    &__input
+      padding: 18px 23px 14px 23px
+      min-width: 255px
+      margin-right: 30px
+
 
 @media (max-width: 768px)
   .hotel

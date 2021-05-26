@@ -1352,7 +1352,7 @@ iframe {
   border-radius: 4px;
   border: none;
   padding: 18px 23px 17px 23px;
-  max-width: 255px;
+  min-width: 255px;
   margin-bottom: 15px;
 }
 
@@ -1423,8 +1423,8 @@ iframe {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  min-width: 283px;
-  margin: 0 auto;
+  min-width: 295px;
+  margin-left: 125px;
 }
 
 @media (max-width: 1200px) {
@@ -1464,7 +1464,7 @@ iframe {
     width: 340px;
   }
   .hotel {
-    padding-bottom: 60px;
+    padding-bottom: 59px;
   }
   .hotel-lead {
     -webkit-box-orient: vertical;
@@ -1486,6 +1486,9 @@ iframe {
     padding-left: 23px;
     padding-right: 22px;
     width: 340px;
+  }
+  .booking__info {
+    margin-bottom: 7px;
   }
   .map {
     width: 340px;
@@ -1512,7 +1515,7 @@ iframe {
     padding: 92px 0 93px 0;
   }
   .activities {
-    padding-bottom: 50px;
+    padding: 50px 0 48px 0;
   }
   .activities__cards {
     -ms-flex-wrap: wrap;
@@ -1520,8 +1523,74 @@ iframe {
   }
   .activities-card {
     width: 339px;
-    max-height: 255px;
+    min-height: 255px;
+    padding: 24px 26px 24px 26px;
     margin-bottom: 20px;
+  }
+  .footer {
+    padding: 73px 0 33px 0;
+  }
+  .footer-wrapper {
+    -ms-grid-columns: (minmax(min-content, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
+        grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-gap: 50px;
+  }
+  .footer__logo {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    margin: 0;
+    width: 97px;
+  }
+  .footer__social-network {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    grid-column: span 4;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: -16px;
+    margin-top: 7px;
+  }
+  .footer__legal {
+    margin-left: 0px;
+    white-space: nowrap;
+  }
+  .footer__categories {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    white-space: nowrap;
+  }
+  .footer__additional {
+    margin-left: 0;
+    white-space: nowrap;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  .footer__contact-detalis {
+    grid-column: span 4;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .footer__contact-form {
+    grid-column: span 3;
+    -ms-grid-row: 4;
+    grid-row: 4;
+    margin-top: 13px;
+    margin-left: 0;
+  }
+  .footer__form {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__input {
+    padding: 18px 23px 14px 23px;
+    min-width: 255px;
+    margin-right: 30px;
   }
 }
 
