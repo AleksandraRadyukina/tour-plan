@@ -127,6 +127,8 @@
         justify-content: space-between
 
 @media (max-width: 768px)
+  .breadcramp
+    padding-top: 10px
   .hotel
     padding-bottom: 60px
   .activities
@@ -161,8 +163,6 @@
     &__subscribe
       max-width: 310px
   .reviews
-    &__container
-      max-width: 699px
     &-slider
       width: 560px
       &__item
@@ -446,16 +446,13 @@
     &__contact
       &-detalis
         grid-row: 4
+        max-width: 280px
+        white-space: normal
       &-form
           grid-row: 5
     &__info
       grid-row: 6
-    &__item
-      &-address
-        max-width: 288px
-    &__phone
-      &-call
-        max-width: 288px
+    
 
 
 @media (max-width: 576px)
@@ -485,26 +482,44 @@
         right: 50%
         transform: translate(50%, 0)
         margin-right: -25%
+  .footer
+    &__info
+      grid-column: 1 / 3
 
 @media (max-width: 536px)
   .footer
+    padding: 65px 0 23px 0
+    &__logo
+      margin-bottom: 5px
     &__social
+      margin-bottom: 11px
       &-network
         grid-row: 2
         margin-left: 1px
-        
+    &__item
+      &-wrapper
+        margin-right: 10px
     &__categories
-      grid-row: 3
+      grid-row: 5
+      margin-bottom: 17px
     &__additional
       grid-row: 4
       justify-self: start
+      margin-bottom: 7px
     &__legal
-      grid-row: 5
+      grid-row: 3
+      margin-bottom: 8px
     &__contact
       &-detalis
         grid-row: 6
+        margin-bottom: 30px
       &-form
         grid-row: 7
+        margin-bottom: 10px
+    &__title
+      &-form
+        margin-bottom: 14px
+      
     &__form
       &_info
         flex-basis: 100%
@@ -513,6 +528,7 @@
       margin-right: 0
     &__message
       flex-basis: 100%
+      margin-bottom: 17px
     &__info
       grid-row: 8
       grid-column: 1
@@ -520,6 +536,7 @@
       flex-wrap: wrap
       &-links
         margin-bottom: 10px
+        min-width: 281px
 
 @media (max-width: 485px)
   .reviews
@@ -537,6 +554,28 @@
       padding-bottom: 38px
   .slider
     height: 200px
+  .footer
+    &__title
+      &-inline
+        margin: 0 0 20px 0
+    &__social
+      flex-direction: column
+      align-items: flex-start
+    &__contact
+      &-form
+        flex-basis: 80%
+    &__form
+      &_info
+        flex-direction: column-reverse
+        align-items: flex-start
+    &__required
+      margin-bottom: 15px
+
+@media (max-width: 400px)
+  .footer
+    &__contact
+      &-form
+        max-width: 300px
 
 @media (max-width: 343px)
   .navbar
@@ -544,14 +583,18 @@
       top: 69px
   .reviews
     &-title
-      margin-left: 20px
-      margin-right: 20px
+      margin-left: 44px
+      margin-right: 44px
     &__button
       top: 20%
       &-prev
         margin-left: -30%
       &-next
         margin-right: -30%
+  .footer
+    &__contact
+      &-form
+        max-width: 281px
 
 @media (max-width: 320px)
   .navbar
