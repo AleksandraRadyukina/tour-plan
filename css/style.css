@@ -903,6 +903,8 @@ iframe {
 
 .parallax-window {
   background: transparent;
+  background-position: center;
+  background-size: cover;
 }
 
 .reviews {
