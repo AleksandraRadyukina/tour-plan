@@ -25,19 +25,19 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'aleksandraradyukina@gmail.com'; // Логин на почте
-    $mail->Password   = 'AveGoth2507'; // Пароль на почте
+    $mail->Username   = 'aleksa.radd@gmail.com'; // Логин на почте
+    $mail->Password   = 'IxeIQTXJ'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('aleksandraradyukina@gmail.com', 'Александра Радюкина'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('aleksa.radd@gmail.com', 'Aleksandra Rad'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('aleksandrapandina@yandex.ru');  
+    $mail->addAddress('radiukina.a@yandex.ru');  
     
 
 
