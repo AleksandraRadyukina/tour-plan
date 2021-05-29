@@ -2015,6 +2015,7 @@ iframe {
   }
   .footer__social-network {
     margin-left: -156px;
+    grid-column: span 2;
   }
   .footer__legal {
     -ms-grid-row: 3;
@@ -2028,11 +2029,14 @@ iframe {
     white-space: nowrap;
   }
   .footer__additional {
+    -ms-grid-row: 2;
+    grid-row: 2 / 2;
     white-space: nowrap;
   }
   .footer__contact-detalis {
     -ms-grid-row: 4;
     grid-row: 4;
+    grid-column: span 2;
   }
   .footer__contact-form {
     -ms-grid-row: 5;
@@ -2054,8 +2058,8 @@ iframe {
     -ms-grid-row: 6;
     grid-row: 6;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 5;
-    grid-column: 1 / 6;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
   }
 }
 

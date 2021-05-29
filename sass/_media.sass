@@ -322,6 +322,7 @@
     &__social
       &-network
         margin-left: -156px
+        grid-column: span 2
     &__legal
       grid-row: 3
       white-space: normal
@@ -329,10 +330,12 @@
       grid-row: 2 / 3
       white-space: nowrap
     &__additional
+      grid-row: 2 / 2
       white-space: nowrap
     &__contact
       &-detalis
         grid-row: 4
+        grid-column: span 2
       &-form
           grid-row: 5
     &__form
@@ -344,7 +347,7 @@
       flex-basis: 88%
     &__info
       grid-row: 6
-      grid-column: 1 / 6
+      grid-column: 1 / 2
 
 @media (max-width: 689px)
   .activities
