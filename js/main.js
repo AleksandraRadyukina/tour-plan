@@ -53,13 +53,22 @@ $(document).ready(function (){
     modalDialog.removeClass("modal__dialog--visible");
   }
 
-  $(".modal__form").validate({
-    messages: {
-      name: "Please specify your name",
-      email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com"
-      }
-    }
-  });
+  $(".form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "The name must be at least two letters",
+        },
+        phone: {
+          required: "Please enter your phone number",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+      },
+    });
+  })
 })

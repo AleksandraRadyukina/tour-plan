@@ -401,6 +401,11 @@ input[type=text]:placeholder {
   cursor: pointer;
 }
 
+.invalid {
+  color: #EC1F46;
+  white-space: unset;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1435,7 +1440,12 @@ iframe {
 }
 
 .footer__input {
-  min-width: 255px;
+  width: 100%;
+}
+
+.footer__input-group {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
   margin-bottom: 15px;
 }
 
@@ -1602,8 +1612,9 @@ iframe {
     width: 228px;
     height: 228px;
   }
-  .footer__input {
-    min-width: 220px;
+  .footer__input-group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -1761,7 +1772,10 @@ iframe {
   }
   .footer__input {
     padding: 18px 23px 14px 23px;
-    min-width: 255px;
+  }
+  .footer__input-group {
+    -ms-flex-preferred-size: 79%;
+        flex-basis: 79%;
     margin-right: 30px;
   }
   .footer__message {
@@ -1855,6 +1869,10 @@ iframe {
     grid-gap: 20px;
   }
   .footer__form_info {
+    -ms-flex-preferred-size: 86%;
+        flex-basis: 86%;
+  }
+  .footer__input-group {
     -ms-flex-preferred-size: 86%;
         flex-basis: 86%;
   }
@@ -2026,7 +2044,6 @@ iframe {
   .footer-wrapper {
     -ms-grid-row: 3;
     grid-row: 3;
-    white-space: nowrap;
   }
   .footer__social-network {
     margin-left: -156px;
@@ -2061,11 +2078,12 @@ iframe {
     -ms-flex-preferred-size: 88%;
         flex-basis: 88%;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 88%;
         flex-basis: 88%;
   }
   .footer__message {
+    width: 88%;
     -ms-flex-preferred-size: 88%;
         flex-basis: 88%;
   }
@@ -2268,18 +2286,14 @@ iframe {
   .footer__title-form {
     margin-bottom: 14px;
   }
-  .footer__form_info {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .footer__input {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 88%;
+        flex-basis: 88%;
     margin-right: 0;
   }
   .footer__message {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 88%;
+        flex-basis: 88%;
     margin-bottom: 17px;
   }
   .footer__info {
