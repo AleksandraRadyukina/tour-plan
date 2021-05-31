@@ -54,8 +54,8 @@ $(document).ready(function (){
   }
 
   $(".form").each(function() {
-    $('.modal__phone').mask('+7(000) 000-0000'),
-    $('.footer__input-phone').mask('+7(000) 000-0000'),
+    $('.modal__phone').mask('+7 (000) 000-0000'),
+    $('.footer__input-phone').mask('+7 (000) 000-0000'),
     $(this).validate({
       errorClass: "invalid",
       messages: {
