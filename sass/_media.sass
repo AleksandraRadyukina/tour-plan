@@ -151,15 +151,15 @@
     &-wrapper
       grid-template-columns: repeat(2, minmax(min-content, 1fr))
     &__form
-      &_info
-        flex-basis: 79%
+      &-bottom
+        flex-basis: 82%
     &__input
       width: 255px
       &-group
-        flex-basis: 48%
+        flex-basis: 40%
         margin-right: 30px
     &__message
-      width: 539px
+      flex-basis: 82%
       
   .modal
     &__form
@@ -202,14 +202,11 @@
   .footer
     &-wrapper
       grid-gap: 20px
+    &__message
+      flex-basis: 86%
     &__form
       &-bottom
-        flex-basis: 76%
-    &__input
-      &-group
-        flex-basis: 76%
-    &__message
-      flex-basis: 76%      
+        flex-basis: 86%    
 
 
 @media (max-width: 740px)
@@ -360,13 +357,12 @@
           grid-row: 5
     &__form
       &-bottom
-        flex-basis: 88%
+        flex-basis: 89%
     &__input
       &-group
-        flex-basis: 88%
+        flex-basis: 32%
     &__message
-      width: 88%
-      flex-basis: 88%
+      flex-basis: 90%
     &__info
       grid-row: 6
       grid-column: 1 / 3
