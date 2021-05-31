@@ -359,6 +359,16 @@ input {
   line-height: 15px;
 }
 
+a:hover {
+  color: #EC1F46;
+}
+
+button:hover {
+  background-color: #0A223D;
+  -webkit-box-shadow: inset 0 0 0 3px #EC1F46;
+          box-shadow: inset 0 0 0 3px #EC1F46;
+}
+
 .container {
   max-width: 1110px;
   margin: auto;
@@ -1510,6 +1520,11 @@ iframe {
 
 .footer__link:hover {
   color: #EC1F46;
+}
+
+.footer__link_icon:hover {
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
 }
 
 .modal__overlay {

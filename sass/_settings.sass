@@ -11,6 +11,13 @@ input
   font-family: $primary-fonts
   font-size: 12px
   line-height: 15px
+a
+  &:hover
+    color: $primary
+button
+  &:hover
+    background-color: $background
+    box-shadow: inset 0 0 0 3px $primary
 
 .container
   max-width: 1110px
@@ -52,6 +59,9 @@ input[type=email]:placeholder
   border: none
   color: $light
   cursor: pointer
+ 
+
+
 
 .invalid
   color: $primary
