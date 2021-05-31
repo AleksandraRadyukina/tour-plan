@@ -21,6 +21,7 @@
       margin: 0
       font-size: 12px
       line-height: 15px
+    
     &__offer
       padding: 3px 9px
       background-color: $primary
@@ -43,6 +44,10 @@
     display: flex
     flex-direction: column
     justify-content: space-between
+  
+.hotel
+    &__button
+      margin-top: 20px
 
 .stars
   display: flex
@@ -58,3 +63,10 @@
     font-weight: bold
     font-size: 14px
     line-height: 18px
+
+@media (min-width: 992px)
+  .hotel
+    &__button
+      &:hover
+        background-color: $background
+        box-shadow: inset 0 0 0 3px $primary

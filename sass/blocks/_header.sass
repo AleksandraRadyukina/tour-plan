@@ -27,8 +27,7 @@
      color: $light
      text-transform: uppercase
      font-weight: bold
-     &:hover
-       color: $primary
+     
     &__item
       &_mobile
         &_visible
@@ -61,9 +60,7 @@
     width: 65px
     border: none
     background-color: $primary
-    &:hover
-      background-color: $background
-      box-shadow: inset 0 0 0 3px $primary
+    
   
 .user
   display: flex
@@ -79,4 +76,14 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
+
+@media (min-width: 992px)
+  .navbar
+    &__link
+      &:hover
+        color: $primary
+    &__button
+      &:hover
+        background-color: $background
+        box-shadow: inset 0 0 0 3px $primary
     

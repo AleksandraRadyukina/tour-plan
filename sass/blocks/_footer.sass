@@ -44,7 +44,7 @@
     align-items: flex-start
     justify-content: space-between
     flex-wrap: wrap
-    &_info
+    &-bottom
       display: flex
       justify-content: space-between
       flex-basis: 100%
@@ -140,7 +140,11 @@
   &__link
     &:hover
       color: $primary
-    &_icon
-      &:hover
-        transform: skew(-10deg)
+
+@media (min-width: 992px)
+  .footer
+    &__link
+      &_icon
+        &:hover
+          transform: skew(-10deg)
    

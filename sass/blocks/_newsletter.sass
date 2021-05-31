@@ -63,11 +63,16 @@
     overflow: hidden
     cursor: pointer
     border-radius: 0 4px 4px 0
-    &:hover
-      background-color: $background
-      box-shadow: inset 0 0 0 3px $primary
+  
 
 .parallax-window 
   background: transparent
   background-position: center
   background-size: cover
+
+@media (min-width: 992px)
+  .subscribe
+    &__button
+      &:hover
+        background-color: $background
+        box-shadow: inset 0 0 0 3px $primary

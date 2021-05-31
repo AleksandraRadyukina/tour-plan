@@ -115,7 +115,7 @@
         margin-bottom: 0px
     &__form
       justify-content: flex-start
-      &_info
+      &-bottom
         flex-basis: 84%
     &__input
       padding: 18px 23px 14px 23px
@@ -129,6 +129,10 @@
       &-links
         margin-left: 0
         justify-content: space-between
+    &__link
+      &:hover
+        color: unset
+      
   .modal
     &__dialog
       width: 100%
@@ -138,7 +142,7 @@
     padding-bottom: 60px
   .activities
     padding: 60px 0 48px 0
-     &-card
+    &-card
       width: 333px
       height: 255px
   .reviews
@@ -155,10 +159,11 @@
         flex-basis: 48%
         margin-right: 30px
     &__message
-      flex-basis: 100%
+      width: 539px
+      
   .modal
     &__form
-      &_info
+      &-bottom
         flex-direction: column-reverse
         align-items: flex-start
     &__required
@@ -198,7 +203,7 @@
     &-wrapper
       grid-gap: 20px
     &__form
-      &_info
+      &-bottom
         flex-basis: 76%
     &__input
       &-group
@@ -354,7 +359,7 @@
       &-form
           grid-row: 5
     &__form
-      &_info
+      &-bottom
         flex-basis: 88%
     &__input
       &-group
@@ -510,12 +515,15 @@
         margin-bottom: 14px
       
     &__form
+      &-bottom
+        flex-basis: 100%
     &__input 
+      width: 100%
       &-group
-        flex-basis: 88%
+        flex-basis: 100%
         margin-right: 0
     &__message
-      flex-basis: 88%
+      flex-basis: 100%
       margin-bottom: 17px
     &__info
       grid-row: 8
@@ -600,7 +608,7 @@
       &-form
         flex-basis: 100%
     &__form
-      &_info
+      &-bottom
         flex-direction: column-reverse
         align-items: flex-start
     &__required
@@ -621,7 +629,7 @@
   .reviews
     &-slider
       &__text
-        text-align: left: 
+        text-align: left
     &-title
       margin-left: 44px
       margin-right: 44px
