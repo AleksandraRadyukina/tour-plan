@@ -5,7 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
+  <link  rel = "shortcut icon"  href = "./img/favicon.ico"  type = "image / x-icon" > 
+<link  rel = "icon"  href = "./img/favicon.ico"  type = "image / x-icon" >
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/aos.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
@@ -250,13 +253,13 @@
 
 <div class="parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
   <section class="newsletter">
-    <div class="container newsletter-container">
+    <div class="container newsletter-container" data-aos="fade-up">
       <h2 class="newsletter-title">
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="email" class="subscribe__input" placeholder="Your email address" required >
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+        <input type="email" class="subscribe__input"  placeholder="Your email address" name="email" required >
         <button class="subscribe__button">Send</button>
       </form>
     </div>
@@ -561,6 +564,7 @@
 <script src="./js/parallax.min.js"></script>
 <script src="./js/jquery.validate.min.js"></script>
 <script src="./js/jquery.mask.min.js"></script>
+<script src="./js/aos.js"></script>
 <script src="./js/main.js"></script>
 
 </body>

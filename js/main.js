@@ -74,9 +74,5 @@ $(document).ready(function (){
     });
   })
 
-  $('.subscribe__input').validate({
-    messages: {
-      email: "Your email address must be in the format of name@domain.com",
-    },
-  });
+  AOS.init();
 })
