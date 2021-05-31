@@ -1658,9 +1658,13 @@ iframe {
     width: 228px;
     height: 228px;
   }
+  .footer__input {
+    width: 100%;
+  }
   .footer__input-group {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+    margin-bottom: 15px;
   }
 }
 
@@ -1813,20 +1817,20 @@ iframe {
             justify-content: flex-start;
   }
   .footer__form_info {
-    -ms-flex-preferred-size: 79%;
-        flex-basis: 79%;
+    -ms-flex-preferred-size: 84%;
+        flex-basis: 84%;
   }
   .footer__input {
     padding: 18px 23px 14px 23px;
   }
   .footer__input-group {
-    -ms-flex-preferred-size: 79%;
-        flex-basis: 79%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
     margin-right: 30px;
   }
   .footer__message {
-    -ms-flex-preferred-size: 79%;
-        flex-basis: 79%;
+    -ms-flex-preferred-size: 84%;
+        flex-basis: 84%;
   }
   .footer__info {
     -ms-grid-column: 1;
@@ -1845,9 +1849,6 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  .breadcramp {
-    padding-top: 10px;
-  }
   .hotel {
     padding-bottom: 60px;
   }
