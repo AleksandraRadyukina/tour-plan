@@ -54,6 +54,8 @@ $(document).ready(function (){
   }
 
   $(".form").each(function() {
+    $('.modal__phone').mask('(000) 000-0000'),
+    $('.footer__phone').mask('(000) 000-0000'),
     $(this).validate({
       errorClass: "invalid",
       messages: {
@@ -71,4 +73,10 @@ $(document).ready(function (){
       },
     });
   })
+
+  $('.subscribe__input').validate({
+    messages: {
+      email: "Your email address must be in the format of name@domain.com",
+    },
+  });
 })
