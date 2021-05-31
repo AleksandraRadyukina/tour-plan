@@ -54,8 +54,8 @@ $(document).ready(function (){
   }
 
   $(".form").each(function() {
-    $('.modal__phone').mask('(000) 000-0000'),
-    $('.footer__input-phone').mask('(000) 000-0000'),
+    $('.modal__phone').mask('+7(000) 000-0000'),
+    $('.footer__input-phone').mask('+7(000) 000-0000'),
     $(this).validate({
       errorClass: "invalid",
       messages: {
@@ -65,6 +65,7 @@ $(document).ready(function (){
         },
         phone: {
           required: "Please enter your phone number",
+          minlength: "please enter 10 digits",
         },
         email: {
           required: "We need your email address to contact you",
