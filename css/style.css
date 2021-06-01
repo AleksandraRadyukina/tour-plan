@@ -520,6 +520,7 @@ input[type=email]:placeholder {
   width: 65px;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -551,7 +552,7 @@ input[type=email]:placeholder {
   .navbar__link:hover {
     color: #EC1F46;
   }
-  .navbar__button:hover {
+  .search__button:hover {
     background-color: #0A223D;
     -webkit-box-shadow: inset 0 0 0 3px #EC1F46;
             box-shadow: inset 0 0 0 3px #EC1F46;
@@ -1883,22 +1884,6 @@ iframe {
         grid-template-columns: repeat(2, minmax(-webkit-min-content, 1fr));
         grid-template-columns: repeat(2, minmax(min-content, 1fr));
   }
-  .footer__form-bottom {
-    -ms-flex-preferred-size: 82%;
-        flex-basis: 82%;
-  }
-  .footer__input {
-    width: 255px;
-  }
-  .footer__input-group {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-    margin-right: 30px;
-  }
-  .footer__message {
-    -ms-flex-preferred-size: 82%;
-        flex-basis: 82%;
-  }
   .modal__form-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1919,6 +1904,9 @@ iframe {
   }
   .search {
     width: 300px;
+  }
+  .breadcramp {
+    padding-top: 10px;
   }
   .slider {
     height: 400px;
@@ -2243,7 +2231,7 @@ iframe {
     line-height: 38px;
   }
   .reviews {
-    padding-bottom: 27px;
+    padding-bottom: 30px;
   }
   .reviews-slider {
     max-width: 400px;
@@ -2446,6 +2434,17 @@ iframe {
   .reviews__button {
     top: 17%;
   }
+  .modal__form-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (max-width: 435px) {
@@ -2484,6 +2483,15 @@ iframe {
   }
   .footer__required {
     margin-bottom: 15px;
+  }
+  .modal__form-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
   }
 }
 
