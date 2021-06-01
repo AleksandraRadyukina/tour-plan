@@ -417,11 +417,15 @@ input[type=email]:placeholder {
 @media (min-width: 992px) {
   a:hover {
     color: #EC1F46;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .button:hover {
     background-color: #0A223D;
     -webkit-box-shadow: inset 0 0 0 3px #EC1F46;
             box-shadow: inset 0 0 0 3px #EC1F46;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
@@ -551,11 +555,20 @@ input[type=email]:placeholder {
 @media (min-width: 992px) {
   .navbar__link:hover {
     color: #EC1F46;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .search__button:hover {
     background-color: #0A223D;
     -webkit-box-shadow: inset 0 0 0 3px #EC1F46;
             box-shadow: inset 0 0 0 3px #EC1F46;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .user__name:hover {
+    color: #EC1F46;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
@@ -716,6 +729,8 @@ input[type=email]:placeholder {
     background-color: #0A223D;
     -webkit-box-shadow: inset 0 0 0 3px #EC1F46;
             box-shadow: inset 0 0 0 3px #EC1F46;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
@@ -860,6 +875,8 @@ input[type=email]:placeholder {
     background-color: #0A223D;
     -webkit-box-shadow: inset 0 0 0 3px #EC1F46;
             box-shadow: inset 0 0 0 3px #EC1F46;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
@@ -1036,6 +1053,8 @@ iframe {
     background-color: #0A223D;
     -webkit-box-shadow: inset 0 0 0 3px #EC1F46;
             box-shadow: inset 0 0 0 3px #EC1F46;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
@@ -1287,6 +1306,8 @@ iframe {
     background-color: #0A223D;
     -webkit-box-shadow: inset 0 0 0 3px #EC1F46;
             box-shadow: inset 0 0 0 3px #EC1F46;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
@@ -1565,12 +1586,16 @@ iframe {
 
 .footer__link:hover {
   color: #EC1F46;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (min-width: 992px) {
   .footer__link_icon:hover {
     -webkit-transform: skew(-10deg);
             transform: skew(-10deg);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 }
 
