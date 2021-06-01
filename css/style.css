@@ -364,6 +364,10 @@ input {
   margin: auto;
 }
 
+textarea {
+  resize: none;
+}
+
 p {
   margin: 0;
 }
@@ -858,12 +862,14 @@ input[type=email]:placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 17px;
+  font-weight: 600;
   font-size: 18px;
   line-height: 25px;
 }
 
 .booking__button {
-  padding: 13px 84px;
+  padding: 13px 83px;
+  font-weight: 600;
   font-size: 14px;
   line-height: 19px;
   font-family: Nunito;
@@ -1181,6 +1187,9 @@ iframe {
   text-align: justify;
   color: #333333;
   margin: 0;
+  max-height: 250px;
+  overflow-y: auto;
+  z-index: 1;
 }
 
 .reviews__stars {
@@ -1960,6 +1969,9 @@ iframe {
   .reviews-slider__item:before, .reviews-slider__item:after {
     display: none;
   }
+  .reviews-slider__text {
+    max-height: 270px;
+  }
   .activities-card {
     width: 300px;
     height: 255px;
@@ -2538,8 +2550,8 @@ iframe {
     text-align: left;
   }
   .reviews-title {
-    margin-left: 44px;
-    margin-right: 44px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .reviews__button {
     top: 20%;

@@ -53,6 +53,7 @@ $(document).ready(function (){
     modalDialog.removeClass("modal__dialog--visible");
   }
 
+
   $(".form").each(function() {
     $('.modal__phone').mask('+7 (000) 000-0000'),
     $('.footer__input-phone').mask('+7 (000) 000-0000'),
@@ -74,6 +75,7 @@ $(document).ready(function (){
       },
     });
   })
+
 
   AOS.init();
 })
